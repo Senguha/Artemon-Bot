@@ -1,0 +1,5 @@
+{
+    "TOKEN": "your-token-goes-here",
+    "GUILD_ID": "your-server-id-goes-here",
+    "CLIENT_ID": "your-application-id-goes-here"
+}
