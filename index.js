@@ -54,14 +54,4 @@ for (const file of eventFiles) {
   }
 }
 
-/*setTimeout(()=>{
-    const row = new ActionRowBuilder().addComponents(button);
-
-    const channel = client.channels.cache.get('1150712146167087186');
-    channel.send({
-    content: `Зароляй свою роль на сегодня. Ты тварь хохохляцкая или статус имеешь?`,
-    components: [row],
-    });
-},10000)
-*/
 client.login(TOKEN);
