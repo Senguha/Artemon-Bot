@@ -47,7 +47,15 @@ module.exports = {
     }
     if (member.roles.cache.has("1150705209165762642")) {
       interaction.reply({
-        content: `Мы не можете заразить хохловирусом своего друга хохла ${user}.`,
+        content: `Вы не можете заразить хохловирусом своего друга хохла ${user}.`,
+        ephemeral: true,
+      });
+      return;
+    }
+    if (member.roles.cache.has("1226980533972500490")) {
+      interaction.reply({
+        content: `Вы не можете заразить пользователя, обладажющего ролью <@&1226980533972500490>.`,
+        allowedMentions: { parse: [] },
         ephemeral: true,
       });
       return;

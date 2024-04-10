@@ -37,7 +37,10 @@ module.exports = {
       const expTime = Math.round((now + SSduration) / 1000);
       channel
         .send(
-          `НИЩИЙ ${person.displayName} получает супер-статус. Он истекает <t:${expTime}:R>`
+          {
+            content: `НИЩИЙ <@${person.id}> получает <@&1226980533972500490>. Он истекает <t:${expTime}:R>`,
+            allowedMentions: { parse: [] },
+          }
         )
         .then(async (message) => {
           await wait(SSduration);

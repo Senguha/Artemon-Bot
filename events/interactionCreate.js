@@ -8,7 +8,7 @@ function getRandom(x, y) {
 
 const rollCooldown = new Collection();
 
-const rollCooldownTime = 30*60;
+const rollCooldownTime = 60*60;
 
 const cooldownAmount = rollCooldownTime * 1000;
 
@@ -78,7 +78,7 @@ module.exports = {
           return console.log("Роли не были загружены");
         }
 
-        if (rolNum <= 25) {
+        if (rolNum <= 45) {
           if (interaction.member.roles.cache.has("1150841738693447811"))
             interaction.member.roles.remove(statusRole);
           interaction.member.roles
@@ -96,7 +96,7 @@ module.exports = {
                 ephemeral: true,
               });
             });
-        } else if (rolNum >= 75) {
+        } else if (rolNum >= 90) {
           if (interaction.member.roles.cache.has("1150705209165762642"))
             interaction.member.roles.remove(hoholRole);
           interaction.member.roles
